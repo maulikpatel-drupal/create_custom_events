@@ -1,0 +1,8 @@
+name: 'Custom Events'
+type: module
+description: 'Creates custom events block with past and upcoming events, and event registration form.'
+core_version_requirement: ^8 || ^9
+package: 'Custom'
+dependencies:
+  - block
+  - datetime

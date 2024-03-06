@@ -1,0 +1,18 @@
+<div class="custom-events-block">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" href="#upcoming-events" data-toggle="tab">Upcoming Events</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#past-events" data-toggle="tab">Past Events</a>
+    </li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane fade show active" id="upcoming-events">
+      {{ drupal_view('upcoming_events_view', 'block_1') }}
+    </div>
+    <div class="tab-pane fade" id="past-events">
+      {{ drupal_view('past_events_view', 'block_1') }}
+    </div>
+  </div>
+</div>

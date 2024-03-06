@@ -1,0 +1,22 @@
+<?php
+
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Drupal\Core\Entity\ContentEntityType;
+use Drupal\Core\Entity\EntityFieldManagerInterface;
+
+/**
+ * Implements hook_entity_type_build().
+ */
+function custom_events_entity_type_build(array &$entity_types) {
+  // Define the custom entity type for events.
+  $entity_types['event'] = [
+    'class' => 'Drupal\custom_events\Entity\Event',
+    'base_table' => 'custom_events',
+    'label' => t('Event'),
+    'entity_keys' => [
+      'id' => 'id',
+      'label' => 'name',
+    ],
+  ];
+}
